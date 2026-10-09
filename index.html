@@ -9,7 +9,7 @@
     <!-- Open Graph (preview ao compartilhar no WhatsApp/redes) -->
     <meta property="og:title" content="Weslley & Poliana | Nosso Casamento">
     <meta property="og:description" content="19 de Dezembro de 2026 • Irati, PR — A distância termina aqui. Confirme sua presença!">
-    <meta property="og:image" content="https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=1200&q=80">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1436491865332-7a61a109cc05?auto=format&fit=crop&w=1200&q=80">
     <meta property="og:type" content="website">
 
     <!-- Favicon -->
@@ -51,6 +51,14 @@
         section { scroll-margin-top: 80px; }
         .reveal { opacity: 0; transform: translateY(24px); transition: opacity .7s ease, transform .7s ease; }
         .reveal.visible { opacity: 1; transform: translateY(0); }
+
+        /* ====== AJUSTES MOBILE ====== */
+        @media (max-width: 640px) {
+            /* Contagem regressiva em 2 colunas no celular */
+            .countdown { display: grid !important; grid-template-columns: repeat(2, minmax(0, 1fr)); max-width: 260px; margin-left: auto; margin-right: auto; }
+            /* Espaço do header mais compacto */
+            header { padding-left: 1rem; padding-right: 1rem; }
+        }
     </style>
 </head>
 <body class="bg-white text-[#2C2C2C] font-sans antialiased selection:bg-burgundy selection:text-white overflow-x-hidden">
@@ -78,9 +86,9 @@
         </div>
     </header>
 
-    <section id="inicio" class="relative h-screen flex items-center justify-center text-center text-white overflow-hidden bg-burgundy-dark px-4">
-        <!-- Foto do hero: casal de mãos dadas ao pôr do sol -->
-        <div class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=1920&q=80')] bg-cover bg-center brightness-[0.55] z-0"></div>
+    <section id="inicio" class="relative h-screen min-h-[560px] flex items-center justify-center text-center text-white overflow-hidden bg-burgundy-dark px-4">
+        <!-- ✈️ Foto do hero: avião decolando ao pôr do sol -->
+        <div class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1436491865332-7a61a109cc05?auto=format&fit=crop&w=1920&q=80')] bg-cover bg-center brightness-[0.5] z-0"></div>
         <div class="absolute inset-0 bg-gradient-to-b from-black/40 via-transparent to-black/50 z-0"></div>
 
         <div class="absolute top-[27%] left-[-300px] w-64 h-[6px] bg-gradient-to-r from-transparent to-white/90 rounded-full blur-[4px] z-10 animate-flight"></div>
@@ -88,12 +96,13 @@
             <i class="fas fa-plane"></i>
         </div>
 
-        <div class="relative z-20 max-w-4xl mx-auto px-4">
+        <div class="relative z-20 max-w-4xl mx-auto px-2">
             <p class="text-[10px] sm:text-xs uppercase tracking-[3px] sm:tracking-[4px] mb-4 text-gold font-semibold">SÃO PAULO <span class="text-white/70 mx-1">✈</span> PARANÁ &bull; A DISTÂNCIA TERMINA AQUI</p>
             <h1 class="font-serif text-4xl sm:text-6xl md:text-7xl font-normal tracking-wide mb-3 drop-shadow-lg">Weslley & Poliana</h1>
-            <p class="text-xs sm:text-sm md:text-base tracking-[2px] sm:tracking-[3px] font-light mb-8 sm:mb-10 drop-shadow-md">19 de Dezembro de 2026 • Irati, PR</p>
+            <p class="text-xs sm:text-sm md:text-base tracking-[2px] sm:tracking-[3px] font-light mb-6 sm:mb-10 drop-shadow-md">19 de Dezembro de 2026 • Irati, PR</p>
 
-            <div class="flex flex-wrap justify-center gap-2 sm:gap-4 md:gap-6">
+            <!-- Contagem: 2 colunas no celular, 1 linha no PC -->
+            <div class="countdown flex flex-wrap justify-center gap-2 sm:gap-4 md:gap-6">
                 <div class="bg-white/10 backdrop-blur-md px-3 sm:px-4 py-2 sm:py-3 rounded-lg min-w-[65px] sm:min-w-[75px] border border-white/20">
                     <span id="days" class="block font-serif text-xl sm:text-2xl md:text-3xl font-bold">00</span>
                     <label class="text-[8px] sm:text-[9px] uppercase tracking-wider text-white/80">Dias</label>
@@ -138,7 +147,6 @@
                 </div>
             </div>
             <div class="relative rounded-lg overflow-hidden shadow-2xl border border-borderGold group">
-                <!-- Foto da seção história: avião decolando ao pôr do sol (tema "a distância termina aqui") -->
                 <img src="https://images.unsplash.com/photo-1436491865332-7a61a109cc05?auto=format&fit=crop&w=900&q=80" alt="Avião decolando — a distância termina aqui" loading="lazy" class="w-full h-auto object-cover group-hover:scale-105 transition-transform duration-500">
             </div>
         </div>
@@ -209,11 +217,11 @@
             <form id="rsvpForm" class="space-y-6" onsubmit="event.preventDefault(); generateBoardingPass();">
                 <div>
                     <label for="guestName" class="block text-xs uppercase tracking-wider font-semibold text-luxuryBlue mb-2">Seu Nome Completo</label>
-                    <input type="text" id="guestName" required placeholder="Digite seu nome" class="w-full p-3.5 border border-borderGold rounded-md bg-white text-sm focus:outline-none focus:border-luxuryBlue">
+                    <input type="text" id="guestName" required placeholder="Digite seu nome" class="w-full p-3.5 border border-borderGold rounded-md bg-white text-sm focus:outline-none focus:border-luxuryBlue text-base">
                 </div>
                 <div>
                     <label for="guestCompanion" class="block text-xs uppercase tracking-wider font-semibold text-luxuryBlue mb-2">Acompanhantes</label>
-                    <select id="guestCompanion" class="w-full p-3.5 border border-borderGold rounded-md bg-white text-sm focus:outline-none focus:border-luxuryBlue">
+                    <select id="guestCompanion" class="w-full p-3.5 border border-borderGold rounded-md bg-white text-sm focus:outline-none focus:border-luxuryBlue text-base">
                         <option value="Apenas eu">Apenas eu</option>
                         <option value="+ 1 Acompanhante">+ 1 Acompanhante</option>
                         <option value="+ 2 Acompanhantes">+ 2 Acompanhantes</option>
@@ -222,7 +230,7 @@
                 </div>
                 <div>
                     <label for="flightClass" class="block text-xs uppercase tracking-wider font-semibold text-luxuryBlue mb-2">Classe do Voo (Assento)</label>
-                    <select id="flightClass" class="w-full p-3.5 border border-borderGold rounded-md bg-white text-sm focus:outline-none focus:border-luxuryBlue">
+                    <select id="flightClass" class="w-full p-3.5 border border-borderGold rounded-md bg-white text-sm focus:outline-none focus:border-luxuryBlue text-base">
                         <option value="Classe VIP - Pais e avós">👑 Classe VIP - Pais e avós</option>
                         <option value="Classe Alta - Padrinhos e madrinhas">⭐ Classe Alta - Padrinhos e madrinhas</option>
                         <option value="Classe Econômica - Familiares e Amigos">✈️ Classe Econômica - Familiares e Amigos</option>
@@ -265,8 +273,9 @@
         </div>
     </section>
 
-    <div id="waModal" class="hidden fixed inset-0 bg-black/60 backdrop-blur-sm z-50 flex items-center justify-center p-4" role="dialog" aria-modal="true">
-        <div class="bg-white p-6 sm:p-8 rounded-xl max-w-md w-full text-center border border-borderGold shadow-2xl">
+    <!-- Modal: no celular abre colado na parte de baixo (estilo bottom-sheet) -->
+    <div id="waModal" class="hidden fixed inset-0 bg-black/60 backdrop-blur-sm z-50 items-end sm:items-center justify-center sm:p-4" role="dialog" aria-modal="true">
+        <div class="bg-white w-full sm:max-w-md rounded-t-2xl sm:rounded-xl p-6 sm:p-8 text-center border border-borderGold shadow-2xl max-h-[90vh] overflow-y-auto">
             <h3 class="font-serif text-2xl text-burgundy mb-2 font-bold">Falar com os Noivos</h3>
             <p id="modalItemText" class="text-sm text-gray-600 mb-6"></p>
             <div class="flex flex-col gap-3">
