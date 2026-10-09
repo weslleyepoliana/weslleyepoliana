@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weslley & Poliana | Nosso Casamento</title>
+    <meta name="description" content="Weslley & Poliana — 19 de Dezembro de 2026, Irati/PR. Confirme sua presença, veja o local, hospedagem e lista de presentes.">
+
+    <!-- Open Graph (preview ao compartilhar no WhatsApp/redes) -->
+    <meta property="og:title" content="Weslley & Poliana | Nosso Casamento">
+    <meta property="og:description" content="19 de Dezembro de 2026 • Irati, PR — A distância termina aqui. Confirme sua presença!">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=1200&q=80">
+    <meta property="og:type" content="website">
+
+    <!-- Favicon -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>✈️</text></svg>">
+
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        burgundy: '#591925',
+                        'burgundy-dark': '#3b1018',
+                        luxuryBlue: '#1A365D',
+                        luxuryBlueLight: '#2B6CB0',
+                        gold: '#D4AF37',
+                        sand: '#F9F8F6',
+                        borderGold: '#E6DFD5'
+                    },
+                    fontFamily: {
+                        serif: ['"Cormorant Garamond"', 'serif'],
+                        sans: ['Montserrat', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        @keyframes flyAcross {
+            0% { transform: translateX(-150vw) translateY(30px) rotate(-5deg); opacity: 0; }
+            10% { opacity: 1; }
+            90% { opacity: 1; }
+            100% { transform: translateX(180vw) translateY(-50px) rotate(-15deg); opacity: 0; }
+        }
+        .animate-flight { animation: flyAcross 14s linear infinite; }
+        html { scroll-behavior: smooth; }
+        section { scroll-margin-top: 80px; }
+        .reveal { opacity: 0; transform: translateY(24px); transition: opacity .7s ease, transform .7s ease; }
+        .reveal.visible { opacity: 1; transform: translateY(0); }
+    </style>
+</head>
+<body class="bg-white text-[#2C2C2C] font-sans antialiased selection:bg-burgundy selection:text-white overflow-x-hidden">
+
+    <header class="fixed top-0 left-0 w-full bg-white/95 backdrop-blur-md z-40 flex justify-between items-center px-4 sm:px-6 lg:px-16 py-4 border-b border-borderGold">
+        <div class="font-serif text-xl font-bold tracking-widest text-burgundy uppercase">W & P</div>
+        <div class="md:hidden text-xl text-burgundy cursor-pointer p-2" id="mobile-menu-btn" aria-label="Abrir menu">
+            <i class="fas fa-bars"></i>
+        </div>
+        <nav class="hidden md:flex gap-8 items-center text-xs tracking-[2px] uppercase font-medium">
+            <a href="#inicio" class="hover:text-luxuryBlueLight transition-colors">Início</a>
+            <a href="#historia" class="hover:text-luxuryBlueLight transition-colors">História</a>
+            <a href="#local" class="hover:text-luxuryBlueLight transition-colors">Local</a>
+            <a href="#hospedagem" class="hover:text-luxuryBlueLight transition-colors">Hospedagem</a>
+            <a href="#presentes" class="hover:text-luxuryBlueLight transition-colors">Presentes</a>
+            <a href="#confirmacao" class="hover:text-luxuryBlueLight transition-colors text-burgundy font-semibold">Confirmação</a>
+        </nav>
+        <div id="mobile-menu" class="hidden absolute top-full left-0 w-full bg-white border-b border-borderGold flex-col items-center py-6 gap-4 md:hidden shadow-lg z-40">
+            <a href="#inicio" class="mobile-link text-xs tracking-[2px] uppercase font-medium">Início</a>
+            <a href="#historia" class="mobile-link text-xs tracking-[2px] uppercase font-medium">História</a>
+            <a href="#local" class="mobile-link text-xs tracking-[2px] uppercase font-medium">Local</a>
+            <a href="#hospedagem" class="mobile-link text-xs tracking-[2px] uppercase font-medium">Hospedagem</a>
+            <a href="#presentes" class="mobile-link text-xs tracking-[2px] uppercase font-medium">Presentes</a>
+            <a href="#confirmacao" class="mobile-link text-xs tracking-[2px] uppercase font-semibold text-burgundy">Confirmação</a>
+        </div>
+    </header>
+
+    <section id="inicio" class="relative h-screen flex items-center justify-center text-center text-white overflow-hidden bg-burgundy-dark px-4">
+        <!-- Foto do hero: casal de mãos dadas ao pôr do sol -->
+        <div class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=1920&q=80')] bg-cover bg-center brightness-[0.55] z-0"></div>
+        <div class="absolute inset-0 bg-gradient-to-b from-black/40 via-transparent to-black/50 z-0"></div>
+
+        <div class="absolute top-[27%] left-[-300px] w-64 h-[6px] bg-gradient-to-r from-transparent to-white/90 rounded-full blur-[4px] z-10 animate-flight"></div>
+        <div class="absolute top-[25%] left-[-150px] text-3xl text-white z-10 animate-flight drop-shadow-[0_0_10px_rgba(255,255,255,0.8)]">
+            <i class="fas fa-plane"></i>
+        </div>
+
+        <div class="relative z-20 max-w-4xl mx-auto px-4">
+            <p class="text-[10px] sm:text-xs uppercase tracking-[3px] sm:tracking-[4px] mb-4 text-gold font-semibold">SÃO PAULO <span class="text-white/70 mx-1">✈</span> PARANÁ &bull; A DISTÂNCIA TERMINA AQUI</p>
+            <h1 class="font-serif text-4xl sm:text-6xl md:text-7xl font-normal tracking-wide mb-3 drop-shadow-lg">Weslley & Poliana</h1>
+            <p class="text-xs sm:text-sm md:text-base tracking-[2px] sm:tracking-[3px] font-light mb-8 sm:mb-10 drop-shadow-md">19 de Dezembro de 2026 • Irati, PR</p>
+
+            <div class="flex flex-wrap justify-center gap-2 sm:gap-4 md:gap-6">
+                <div class="bg-white/10 backdrop-blur-md px-3 sm:px-4 py-2 sm:py-3 rounded-lg min-w-[65px] sm:min-w-[75px] border border-white/20">
+                    <span id="days" class="block font-serif text-xl sm:text-2xl md:text-3xl font-bold">00</span>
+                    <label class="text-[8px] sm:text-[9px] uppercase tracking-wider text-white/80">Dias</label>
+                </div>
+                <div class="bg-white/10 backdrop-blur-md px-3 sm:px-4 py-2 sm:py-3 rounded-lg min-w-[65px] sm:min-w-[75px] border border-white/20">
+                    <span id="hours" class="block font-serif text-xl sm:text-2xl md:text-3xl font-bold">00</span>
+                    <label class="text-[8px] sm:text-[9px] uppercase tracking-wider text-white/80">Horas</label>
+                </div>
+                <div class="bg-white/10 backdrop-blur-md px-3 sm:px-4 py-2 sm:py-3 rounded-lg min-w-[65px] sm:min-w-[75px] border border-white/20">
+                    <span id="mins" class="block font-serif text-xl sm:text-2xl md:text-3xl font-bold">00</span>
+                    <label class="text-[8px] sm:text-[9px] uppercase tracking-wider text-white/80">Minutos</label>
+                </div>
+                <div class="bg-white/10 backdrop-blur-md px-3 sm:px-4 py-2 sm:py-3 rounded-lg min-w-[65px] sm:min-w-[75px] border border-white/20">
+                    <span id="secs" class="block font-serif text-xl sm:text-2xl md:text-3xl font-bold">00</span>
+                    <label class="text-[8px] sm:text-[9px] uppercase tracking-wider text-white/80">Segundos</label>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="historia" class="py-16 sm:py-24 px-4 sm:px-6 lg:px-24">
+        <div class="text-center mb-12 sm:mb-16 reveal">
+            <h2 class="font-serif text-3xl sm:text-4xl text-burgundy font-normal mb-2">Nossa História</h2>
+            <div class="w-10 h-[1px] bg-gold mx-auto"></div>
+        </div>
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-12 items-center max-w-6xl mx-auto reveal">
+            <div>
+                <h3 class="font-serif text-2xl sm:text-3xl text-luxuryBlue font-normal mb-4 sm:mb-6">VOO PW1912 — DESTINO: NOSSO PARA SEMPRE</h3>
+                <p class="text-gray-600 font-light mb-4 text-sm sm:text-base leading-relaxed">Senhores passageiros, preparem seus corações, pois está chegando a hora de embarcar em uma das viagens mais importantes da nossa vida.</p>
+                <p class="text-gray-600 font-light mb-4 text-sm sm:text-base leading-relaxed">Foram anos de encontros, despedidas, quilômetros de distância, saudades e sonhos que nos trouxeram até aqui.</p>
+                <p class="text-gray-600 font-light mb-4 text-sm sm:text-base leading-relaxed">Depois de tantos momentos vividos, chegou a hora de darmos início ao capítulo mais especial da nossa história.</p>
+                <p class="text-gray-600 font-light mb-6 text-sm sm:text-base leading-relaxed">Pedimos que guardem no coração cada sorriso, cada abraço e cada lágrima de felicidade, porque este voo não tem passagem de volta.</p>
+                <div class="space-y-2 border-l-2 border-gold pl-4 mt-6">
+                    <div>
+                        <span class="text-xs uppercase tracking-widest text-burgundy font-semibold">Próxima parada:</span>
+                        <p class="font-serif text-lg text-luxuryBlue font-medium">O altar.</p>
+                    </div>
+                    <div>
+                        <span class="text-xs uppercase tracking-widest text-burgundy font-semibold">Destino final:</span>
+                        <p class="font-serif text-lg text-luxuryBlue font-medium">Uma vida inteira juntos.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="relative rounded-lg overflow-hidden shadow-2xl border border-borderGold group">
+                <!-- Foto da seção história: avião decolando ao pôr do sol (tema "a distância termina aqui") -->
+                <img src="https://images.unsplash.com/photo-1436491865332-7a61a109cc05?auto=format&fit=crop&w=900&q=80" alt="Avião decolando — a distância termina aqui" loading="lazy" class="w-full h-auto object-cover group-hover:scale-105 transition-transform duration-500">
+            </div>
+        </div>
+    </section>
+
+    <section id="local" class="py-16 sm:py-24 px-4 sm:px-6 lg:px-24 bg-sand">
+        <div class="text-center mb-12 sm:mb-16 reveal">
+            <h2 class="font-serif text-3xl sm:text-4xl text-burgundy font-normal mb-2">Local & Horário</h2>
+            <div class="w-10 h-[1px] bg-gold mx-auto"></div>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8 max-w-6xl mx-auto reveal">
+            <div class="bg-white p-6 sm:p-10 rounded-lg text-center border border-borderGold shadow-sm hover:-translate-y-1 transition-transform">
+                <i class="fas fa-calendar-alt text-3xl text-luxuryBlue mb-4"></i>
+                <h3 class="font-serif text-xl font-bold text-gray-800 mb-2">Data</h3>
+                <p class="text-gray-600 font-light text-sm sm:text-base">19 de Dezembro de 2026</p>
+                <p class="text-xs text-gray-500 mt-1">Sábado às 16h</p>
+            </div>
+            <div class="bg-white p-6 sm:p-10 rounded-lg text-center border border-borderGold shadow-sm hover:-translate-y-1 transition-transform">
+                <i class="fas fa-map-marker-alt text-3xl text-luxuryBlue mb-4"></i>
+                <h3 class="font-serif text-xl font-bold text-gray-800 mb-2">Endereço</h3>
+                <p class="text-gray-600 font-light text-sm sm:text-base">Recanto Lagoa Eventos</p>
+                <div class="bg-sand p-3 rounded mt-3 text-xs text-burgundy font-medium border border-borderGold leading-relaxed">
+                    Rua Ângela Borazo Bonete, 4 – Bairro Lagoa, Irati – PR
+                </div>
+            </div>
+            <div class="bg-white p-6 sm:p-10 rounded-lg text-center border border-borderGold shadow-sm hover:-translate-y-1 transition-transform">
+                <i class="fas fa-palette text-3xl text-luxuryBlue mb-4"></i>
+                <h3 class="font-serif text-xl font-bold text-gray-800 mb-2">Dress Code</h3>
+                <p class="text-gray-600 font-light text-sm sm:text-base">Esporte Fino</p>
+                <p class="text-xs text-gray-500 mt-1">Traje ideal para a ocasião</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="hospedagem" class="py-16 sm:py-24 px-4 sm:px-6 lg:px-24">
+        <div class="text-center mb-10 sm:mb-12 reveal">
+            <h2 class="font-serif text-3xl sm:text-4xl text-burgundy font-normal mb-2">Hospedagem em Irati</h2>
+            <div class="w-10 h-[1px] bg-gold mx-auto"></div>
+        </div>
+        <p class="text-center max-w-2xl mx-auto text-gray-600 text-xs sm:text-sm font-light mb-12 sm:mb-16 px-2 reveal">
+            Para os convidados que vêm de longe, separamos as opções em Irati/PR com valores de referência e o link direto para ver a localização no mapa.
+        </p>
+
+        <div class="max-w-6xl mx-auto reveal">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6" id="hotels-grid"></div>
+        </div>
+    </section>
+
+    <section id="presentes" class="py-16 sm:py-24 px-4 sm:px-6 lg:px-24 bg-sand">
+        <div class="text-center mb-10 sm:mb-12 reveal">
+            <h2 class="font-serif text-3xl sm:text-4xl text-burgundy font-normal mb-2">Lista de Presentes</h2>
+            <div class="w-10 h-[1px] bg-gold mx-auto"></div>
+        </div>
+        <p class="text-center max-w-2xl mx-auto text-gray-600 text-xs sm:text-sm font-light mb-12 px-2 reveal">
+            Escolha um presente e fale direto com os noivos pelo WhatsApp para reservá-lo. 💛
+        </p>
+
+        <div class="max-w-4xl mx-auto reveal" id="gifts-container"></div>
+    </section>
+
+    <section id="confirmacao" class="py-16 sm:py-24 px-4 sm:px-6 lg:px-24 bg-sand border-t border-borderGold">
+        <div class="text-center mb-12 sm:mb-16 reveal">
+            <h2 class="font-serif text-3xl sm:text-4xl text-burgundy font-normal mb-2">Confirmação de Presença</h2>
+            <div class="w-10 h-[1px] bg-gold mx-auto"></div>
+        </div>
+
+        <div class="max-w-xl mx-auto bg-white p-6 sm:p-8 md:p-12 rounded-lg border border-borderGold shadow-md reveal">
+            <form id="rsvpForm" class="space-y-6" onsubmit="event.preventDefault(); generateBoardingPass();">
+                <div>
+                    <label for="guestName" class="block text-xs uppercase tracking-wider font-semibold text-luxuryBlue mb-2">Seu Nome Completo</label>
+                    <input type="text" id="guestName" required placeholder="Digite seu nome" class="w-full p-3.5 border border-borderGold rounded-md bg-white text-sm focus:outline-none focus:border-luxuryBlue">
+                </div>
+                <div>
+                    <label for="guestCompanion" class="block text-xs uppercase tracking-wider font-semibold text-luxuryBlue mb-2">Acompanhantes</label>
+                    <select id="guestCompanion" class="w-full p-3.5 border border-borderGold rounded-md bg-white text-sm focus:outline-none focus:border-luxuryBlue">
+                        <option value="Apenas eu">Apenas eu</option>
+                        <option value="+ 1 Acompanhante">+ 1 Acompanhante</option>
+                        <option value="+ 2 Acompanhantes">+ 2 Acompanhantes</option>
+                        <option value="+ 3 Acompanhantes">+ 3 Acompanhantes</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="flightClass" class="block text-xs uppercase tracking-wider font-semibold text-luxuryBlue mb-2">Classe do Voo (Assento)</label>
+                    <select id="flightClass" class="w-full p-3.5 border border-borderGold rounded-md bg-white text-sm focus:outline-none focus:border-luxuryBlue">
+                        <option value="Classe VIP - Pais e avós">👑 Classe VIP - Pais e avós</option>
+                        <option value="Classe Alta - Padrinhos e madrinhas">⭐ Classe Alta - Padrinhos e madrinhas</option>
+                        <option value="Classe Econômica - Familiares e Amigos">✈️ Classe Econômica - Familiares e Amigos</option>
+                    </select>
+                </div>
+                <button type="submit" class="w-full bg-luxuryBlue hover:bg-luxuryBlueLight text-white py-4 rounded-md uppercase tracking-[2px] text-xs font-semibold transition-colors shadow">Confirmar e Gerar Cartão de Embarque</button>
+            </form>
+
+            <div id="boardingPass" class="hidden mt-8 bg-white border-2 border-dashed border-burgundy p-6 rounded-lg relative">
+                <div class="flex justify-between items-center border-b border-borderGold pb-3 mb-4 text-burgundy font-bold text-xs">
+                    <span>✈️ CARTÃO DE EMBARQUE • CASAMENTO</span>
+                    <span id="passClassBadge" class="bg-burgundy text-white px-2.5 py-1 rounded text-[10px]"></span>
+                </div>
+                <div class="grid grid-cols-2 gap-4 text-sm mb-6">
+                    <div>
+                        <span class="block text-[10px] text-gray-400 uppercase tracking-wider">Convidado</span>
+                        <strong id="passName" class="text-gray-800 break-words"></strong>
+                    </div>
+                    <div>
+                        <span class="block text-[10px] text-gray-400 uppercase tracking-wider">Acompanhantes</span>
+                        <strong id="passCompanion" class="text-gray-800"></strong>
+                    </div>
+                    <div>
+                        <span class="block text-[10px] text-gray-400 uppercase tracking-wider">Destino</span>
+                        <strong class="text-gray-800">Irati, PR</strong>
+                    </div>
+                    <div>
+                        <span class="block text-[10px] text-gray-400 uppercase tracking-wider">Data</span>
+                        <strong class="text-gray-800">19/12/2026 • 16h</strong>
+                    </div>
+                </div>
+                <div class="bg-sand p-3 rounded border border-borderGold text-center mb-4">
+                    <p class="text-xs text-burgundy font-semibold mb-1">📸 Tire um print (captura de tela) deste cartão!</p>
+                    <p class="text-[11px] text-gray-600">Apresente a imagem na portaria no dia do evento.</p>
+                </div>
+                <button id="sendRsvpBtn" type="button" class="w-full bg-[#25D366] hover:opacity-90 text-white py-3.5 rounded-md uppercase tracking-[2px] text-xs font-semibold flex items-center justify-center gap-2 transition-opacity">
+                    <i class="fab fa-whatsapp text-lg"></i> Enviar Confirmação aos Noivos
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <div id="waModal" class="hidden fixed inset-0 bg-black/60 backdrop-blur-sm z-50 flex items-center justify-center p-4" role="dialog" aria-modal="true">
+        <div class="bg-white p-6 sm:p-8 rounded-xl max-w-md w-full text-center border border-borderGold shadow-2xl">
+            <h3 class="font-serif text-2xl text-burgundy mb-2 font-bold">Falar com os Noivos</h3>
+            <p id="modalItemText" class="text-sm text-gray-600 mb-6"></p>
+            <div class="flex flex-col gap-3">
+                <a id="btnWeslley" href="#" target="_blank" rel="noopener" class="bg-[#25D366] hover:opacity-90 text-white py-3 px-4 rounded-md font-semibold text-sm flex items-center justify-center gap-2 transition-opacity">
+                    <i class="fab fa-whatsapp text-lg"></i> Falar com Weslley (19 98181-4224)
+                </a>
+                <a id="btnPoliana" href="#" target="_blank" rel="noopener" class="bg-[#8B263E] hover:opacity-90 text-white py-3 px-4 rounded-md font-semibold text-sm flex items-center justify-center gap-2 transition-opacity">
+                    <i class="fab fa-whatsapp text-lg"></i> Falar com Poliana (42 9854-3755)
+                </a>
+            </div>
+            <button onclick="closeWhatsAppModal()" class="mt-6 text-gray-400 hover:text-gray-600 text-xs uppercase tracking-widest font-medium">Cancelar</button>
+        </div>
+    </div>
+
+    <footer class="bg-burgundy-dark text-white text-center py-16 px-6">
+        <h2 class="font-serif text-3xl text-gray-200 font-normal mb-2">Esperamos você na nossa festa!</h2>
+        <div class="font-serif text-xl tracking-[3px] text-gold mb-8">Weslley & Poliana</div>
+        <p class="text-xs text-gray-400">© 2026 Weslley & Poliana</p>
+    </footer>
+
+    <script>
+        /* ============ CONFIGURAÇÃO ============ */
+        const WHATS_WESLLEY = '5519981814224';
+        const WHATS_POLIANA = '554298543755'; // ⚠️ Confirme este número (precisa de 9 dígitos após o DDD)
+
+        const hotels = [
+            { name: 'Hotel Abib', addr: 'R. Dr. João Cândido Ferreira, 776 – Centro', desc: '⭐ Café da manhã e Estacionamento', price: 'a partir de R$ 234 / noite', map: 'Hotel+Abib+Irati' },
+            { name: 'Hotel Sollievo', addr: 'R. Benjamin Constant, 465 – Centro', desc: '⭐ Localização central com café', price: 'a partir de R$ 370 / noite', map: 'Hotel+Sollievo+Irati' },
+            { name: 'Hotel Monte Libano', addr: 'Av. José Galicioli, 1205 – Centro', desc: '⭐ Conforto e boa localização', price: 'Consultar valores', map: 'Av.+Jose+Galicioli+1205+Irati' },
+            { name: 'Hotel Colonial', addr: 'Rua Dona Noca, 555 – Canisianas', desc: '⭐ Ambiente aconchegante', price: 'Consultar valores', map: 'Rua+Dona+Noca+555+Canisianas+Irati' }
+        ];
+
+        const giftCategories = [
+            { icon: '🛏️', title: 'Quarto', items: ['Jogo de cama', 'Jogo de lençóis', 'Jogo de toalhas', 'Edredom', 'Cobertor', 'Travesseiros', 'Cama', 'Colchão', 'Guarda-roupa'] },
+            { icon: '🍽️', title: 'Cozinha', items: ['Jogo de talheres', 'Jogo de facas', 'Espátulas', 'Medidores', 'Jogo de pratos', 'Jogo de copos', 'Jogo de xícaras', 'Travessas', 'Garrafa térmica', 'Toalha de mesa', 'Jogo de panelas', 'Panela elétrica', 'Formas para bolo/pão', 'Geladeira', 'Fogão', 'Micro-ondas', 'Air fryer', 'Liquidificador', 'Batedeira', 'Sanduicheira', 'Chaleira elétrica', 'Porta-temperos', 'Porta-mantimentos', 'Armário de cozinha', 'Mesa de jantar', 'Cadeiras', 'Balcão de pia'] },
+            { icon: '🧺', title: 'Lavanderia e Limpeza', items: ['Máquina de lavar roupas', 'Centrífuga', 'Aspirador de pó', 'Mop giratório', 'Tábua de passar roupa', 'Ferro de passar roupa'] },
+            { icon: '🛋️', title: 'Sala de Estar', items: ['Sofá', 'Tapete', 'Cortinas', 'Almofadas'] },
+            { icon: '🎁', title: 'Presentes Especiais', items: ['Uma contribuição para nossa lua de mel', 'Uma lembrança para nossa nova casa', 'Contribuição para o nosso novo começo'] }
+        ];
+
+        /* ============ RENDERIZAÇÃO ============ */
+        document.getElementById('hotels-grid').innerHTML = hotels.map(h => `
+            <div class="bg-white p-6 rounded-lg border border-borderGold shadow-sm flex flex-col justify-between">
+                <div>
+                    <h4 class="font-serif text-lg font-bold text-burgundy mb-2">${h.name}</h4>
+                    <p class="text-xs text-gray-600 font-semibold mb-1">📍 ${h.addr}</p>
+                    <p class="text-xs text-gray-500 mb-3">${h.desc}</p>
+                    <span class="inline-block bg-sand px-3 py-1 rounded text-xs font-bold text-luxuryBlue mb-4">${h.price}</span>
+                </div>
+                <a href="https://maps.google.com/?q=${h.map}" target="_blank" rel="noopener" class="w-full bg-luxuryBlue hover:bg-luxuryBlueLight text-white py-2 rounded text-center text-xs font-semibold flex items-center justify-center gap-1.5 transition-colors"><i class="fas fa-map-marker-alt"></i> Ver no Mapa</a>
+            </div>
+        `).join('');
+
+        document.getElementById('gifts-container').innerHTML = giftCategories.map(cat => `
+            <div class="bg-white rounded-lg border border-borderGold overflow-hidden shadow-sm mb-4">
+                <button type="button" class="accordion-btn w-full bg-sand p-4 sm:p-5 cursor-pointer flex justify-between items-center font-serif text-lg sm:text-xl font-semibold text-luxuryBlue" aria-expanded="false">
+                    <span>${cat.icon} ${cat.title}</span>
+                    <i class="fas fa-chevron-down text-sm transition-transform duration-300"></i>
+                </button>
+                <div class="hidden p-4 sm:p-6 border-t border-borderGold bg-white">
+                    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+                        ${cat.items.map(item => `
+                            <div class="gift-card bg-sand p-3 rounded border border-borderGold flex flex-col justify-between gap-3" data-item="${item}">
+                                <span class="gift-label text-xs font-medium">${item}</span>
+                                <button type="button" onclick="openWhatsAppModal('${item.replace(/'/g, "\\'")}')" class="bg-[#25D366] text-white py-1.5 rounded text-xs font-semibold flex items-center justify-center gap-1.5">
+                                    <i class="fab fa-whatsapp"></i> Escolher
+                                </button>
+                            </div>
+                        `).join('')}
+                    </div>
+                </div>
+            </div>
+        `).join('');
+
+        /* Acordeão acessível */
+        document.querySelectorAll('.accordion-btn').forEach(btn => {
+            btn.addEventListener('click', () => {
+                const content = btn.nextElementSibling;
+                const icon = btn.querySelector('i');
+                const open = content.classList.toggle('hidden') === false;
+                btn.setAttribute('aria-expanded', open);
+                icon.classList.toggle('rotate-180', open);
+            });
+        });
+
+        /* ============ MENU MOBILE ============ */
+        const mobileMenu = document.getElementById('mobile-menu');
+        document.getElementById('mobile-menu-btn').addEventListener('click', () => mobileMenu.classList.toggle('hidden'));
+        document.querySelectorAll('.mobile-link').forEach(link => link.addEventListener('click', () => mobileMenu.classList.add('hidden')));
+
+        /* ============ ANIMAÇÃO DE ENTRADA ============ */
+        const observer = new IntersectionObserver(entries => {
+            entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); observer.unobserve(e.target); } });
+        }, { threshold: 0.12 });
+        document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+        /* ============ MODAL WHATSAPP ============ */
+        function openWhatsAppModal(itemName) {
+            const msg = `Olá! Gostaria de oferecer o presente: ${itemName}. 💛`;
+            const encodedMsg = encodeURIComponent(msg);
+            document.getElementById('btnWeslley').href = `https://wa.me/${WHATS_WESLLEY}?text=${encodedMsg}`;
+            document.getElementById('btnPoliana').href = `https://wa.me/${WHATS_POLIANA}?text=${encodedMsg}`;
+            document.getElementById('modalItemText').innerText = `Presente selecionado: "${itemName}". Com quem deseja falar?`;
+
+            const modal = document.getElementById('waModal');
+            modal.classList.remove('hidden');
+            modal.classList.add('flex');
+        }
+
+        function closeWhatsAppModal() {
+            const modal = document.getElementById('waModal');
+            modal.classList.add('hidden');
+            modal.classList.remove('flex');
+        }
+        document.getElementById('waModal').addEventListener('click', e => { if (e.target.id === 'waModal') closeWhatsAppModal(); });
+
+        /* ============ CONTAGEM REGRESSIVA ============ */
+        const weddingDate = new Date('December 19, 2026 16:00:00').getTime();
+        setInterval(() => {
+            const diff = weddingDate - Date.now();
+            if (diff > 0) {
+                document.getElementById('days').innerText = String(Math.floor(diff / 86400000)).padStart(2, '0');
+                document.getElementById('hours').innerText = String(Math.floor((diff % 86400000) / 3600000)).padStart(2, '0');
+                document.getElementById('mins').innerText = String(Math.floor((diff % 3600000) / 60000)).padStart(2, '0');
+                document.getElementById('secs').innerText = String(Math.floor((diff % 60000) / 1000)).padStart(2, '0');
+            }
+        }, 1000);
+
+        /* ============ CARTÃO DE EMBARQUE ============ */
+        function showToast(message) {
+            const toast = document.createElement('div');
+            toast.className = 'fixed top-6 right-6 bg-red-600 text-white px-6 py-3 rounded shadow-lg text-xs font-semibold z-50';
+            toast.innerText = message;
+            document.body.appendChild(toast);
+            setTimeout(() => toast.remove(), 3000);
+        }
+
+        function generateBoardingPass() {
+            const name = document.getElementById('guestName').value.trim();
+            if (!name) { showToast('Por favor, digite o seu nome completo.'); return; }
+
+            document.getElementById('passName').innerText = name;
+            document.getElementById('passCompanion').innerText = document.getElementById('guestCompanion').value;
+            document.getElementById('passClassBadge').innerText = document.getElementById('flightClass').value;
+            document.getElementById('boardingPass').classList.remove('hidden');
+            document.getElementById('boardingPass').scrollIntoView({ behavior: 'smooth', block: 'center' });
+        }
+
+        document.getElementById('sendRsvpBtn').addEventListener('click', () => {
+            const name = document.getElementById('passName').innerText || document.getElementById('guestName').value.trim();
+            const companion = document.getElementById('passCompanion').innerText;
+            const flightClass = document.getElementById('flightClass').value;
+            const msg = `✈️ Confirmação de presença — Casamento Weslley & Poliana\n\nConvidado: ${name}\nAcompanhantes: ${companion}\n${flightClass}\n\nDestino: Irati, PR — 19/12/2026 às 16h`;
+            const encodedMsg = encodeURIComponent(msg);
+            document.getElementById('btnWeslley').href = `https://wa.me/${WHATS_WESLLEY}?text=${encodedMsg}`;
+            document.getElementById('btnPoliana').href = `https://wa.me/${WHATS_POLIANA}?text=${encodedMsg}`;
+            document.getElementById('modalItemText').innerText = 'Confirmação pronta! Escolha com quem enviar:';
+            const modal = document.getElementById('waModal');
+            modal.classList.remove('hidden');
+            modal.classList.add('flex');
+        });
+    </script>
+</body>
+</html>
