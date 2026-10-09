@@ -56,7 +56,7 @@
         @media (max-width: 640px) {
             /* Contagem regressiva em 2 colunas no celular */
             .countdown { display: grid !important; grid-template-columns: repeat(2, minmax(0, 1fr)); max-width: 260px; margin-left: auto; margin-right: auto; }
-            /* Espaço do header mais compacto */
+            /* Header mais compacto */
             header { padding-left: 1rem; padding-right: 1rem; }
         }
     </style>
@@ -273,7 +273,7 @@
         </div>
     </section>
 
-    <!-- Modal: no celular abre colado na parte de baixo (estilo bottom-sheet) -->
+    <!-- Modal: no celular abre estilo bottom-sheet (de baixo), no PC centralizado -->
     <div id="waModal" class="hidden fixed inset-0 bg-black/60 backdrop-blur-sm z-50 items-end sm:items-center justify-center sm:p-4" role="dialog" aria-modal="true">
         <div class="bg-white w-full sm:max-w-md rounded-t-2xl sm:rounded-xl p-6 sm:p-8 text-center border border-borderGold shadow-2xl max-h-[90vh] overflow-y-auto">
             <h3 class="font-serif text-2xl text-burgundy mb-2 font-bold">Falar com os Noivos</h3>
@@ -361,10 +361,16 @@
             });
         });
 
-        /* ============ MENU MOBILE ============ */
+        /* ============ MENU MOBILE (corrigido: abre com flex para espaçar os itens) ============ */
         const mobileMenu = document.getElementById('mobile-menu');
-        document.getElementById('mobile-menu-btn').addEventListener('click', () => mobileMenu.classList.toggle('hidden'));
-        document.querySelectorAll('.mobile-link').forEach(link => link.addEventListener('click', () => mobileMenu.classList.add('hidden')));
+        document.getElementById('mobile-menu-btn').addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+            mobileMenu.classList.toggle('flex');
+        });
+        document.querySelectorAll('.mobile-link').forEach(link => link.addEventListener('click', () => {
+            mobileMenu.classList.add('hidden');
+            mobileMenu.classList.remove('flex');
+        }));
 
         /* ============ ANIMAÇÃO DE ENTRADA ============ */
         const observer = new IntersectionObserver(entries => {
